@@ -1,0 +1,54 @@
+h1,
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans", "Arial", "sans-serif", "serif";
+  font-size: 1rem;
+  background-color: rgb(49, 14, 14);
+}
+
+h1 {
+  color: hsl(292, 42%, 14%);
+  margin-bottom: 30px;
+}
+
+h1::before {
+  content: url(/assets/images/icon-star.svg);
+  position: relative;
+  top: 8px;
+  margin-right: 20px;
+}
+
+dl {
+  background-color: white;
+
+  max-width: 600px;
+  margin: 0 auto 0 auto;
+  padding: 30px;
+
+  border-radius: 20px;
+}
+
+dl div {
+  border-bottom: 0.1rem solid hsl(275, 100%, 97%);
+  margin-bottom: 15px;
+}
+
+dl div:last-child {
+  border-bottom: none;
+}
+
+dt {
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+  margin-bottom: 15px;
+}
+
+dd {
+  color: hsl(292, 16%, 49%);
+  margin-bottom: 15px;
+}
