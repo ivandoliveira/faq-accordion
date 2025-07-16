@@ -8,10 +8,13 @@ dd {
 body {
   font-family: "Work Sans", "Arial", "sans-serif", "serif";
   font-size: 1rem;
-  background-color: rgb(49, 14, 14);
+  background-image: url(/assets/images/background-pattern-desktop.svg);
+  background-repeat: repeat-x;
+  background-color: hsl(275, 100%, 97%);
 }
 
 h1 {
+  font-size: 3rem;
   color: hsl(292, 42%, 14%);
   margin-bottom: 30px;
 }
@@ -19,21 +22,24 @@ h1 {
 h1::before {
   content: url(/assets/images/icon-star.svg);
   position: relative;
-  top: 8px;
+  top: 6px;
   margin-right: 20px;
 }
 
 dl {
   background-color: white;
 
-  max-width: 600px;
-  margin: 0 auto 0 auto;
-  padding: 30px;
+  max-width: 520px;
+  margin: 190px auto 0 auto;
+  padding: 30px 30px 10px 30px;
 
-  border-radius: 20px;
+  border-radius: 10px;
+
+  box-shadow: -3px 3px 20px 1px rgba(148, 89, 143, 0.253),
+    3px 0px 10px 1px rgba(0, 0, 0, 0.253);
 }
 
-dl div {
+.container-item {
   border-bottom: 0.1rem solid hsl(275, 100%, 97%);
   margin-bottom: 15px;
 }
@@ -42,13 +48,99 @@ dl div:last-child {
   border-bottom: none;
 }
 
+.icon-minus {
+  display: none;
+}
+
+.container-dt {
+  margin: 20px 0 20px 0;
+}
+
 dt {
   font-weight: 600;
   color: hsl(292, 42%, 14%);
-  margin-bottom: 15px;
+}
+
+.container-dt:hover {
+  color: #ad28eb;
+  cursor: pointer;
+}
+
+.container-dt {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
 dd {
+  opacity: 0;
+  display: none;
+}
+
+dd.show {
+  display: block;
   color: hsl(292, 16%, 49%);
   margin-bottom: 15px;
+  animation: slideDown 0.8s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes showIcon {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hideIcon {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 620px) {
+  dl {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    background-image: url(/assets/images/background-pattern-mobile.svg);
+  }
+  dl {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
