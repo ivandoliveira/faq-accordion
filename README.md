@@ -14,7 +14,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -34,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-page-using-css-grid-pgIueaG6bL)
-- Live Site URL: [Add live site URL here](https://ivandoliveirafaqaccordion.netlify.app/)
+- Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/responsive-page-using-css-grid-pgIueaG6bL)
+- Live Site URL: [netlify](https://ivandoliveirafaqaccordion.netlify.app/)
 
 ## My process
 
@@ -45,4 +44,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ivandoliveira)
+- Frontend Mentor - [@ivandoliveira](https://www.frontendmentor.io/profile/ivandoliveira)
