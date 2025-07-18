@@ -26,3 +26,24 @@ dt.forEach((element) => {
     }
   });
 });
+
+dt.forEach((element) => {
+  element.addEventListener("keypress", function () {
+    const keyName = event.key;
+    if (keyName == "Enter") {
+      element.nextElementSibling.classList.toggle("show");
+      const dd = this.nextElementSibling;
+      const minusIcon = this.querySelector(".icon-minus");
+      const plusIcon = this.querySelector(".icon-plus");
+
+      if (dd.classList == "show") {
+        console.log("teste");
+        plusIcon.style.display = "none";
+        minusIcon.style.display = "block";
+      } else {
+        minusIcon.style.display = "none";
+        plusIcon.style.display = "block";
+      }
+    }
+  });
+});

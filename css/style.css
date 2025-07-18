@@ -66,6 +66,10 @@ dt {
   cursor: pointer;
 }
 
+dt:hover {
+  color: #ad28eb;
+}
+
 .container-dt {
   display: grid;
   grid-template-columns: 1fr auto;
