@@ -8,7 +8,7 @@ dd {
 body {
   font-family: "Work Sans", "Arial", "sans-serif", "serif";
   font-size: 1rem;
-  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-image: url(/assets/images/background-pattern-desktop.svg);
   background-repeat: repeat-x;
   background-color: hsl(275, 100%, 97%);
 }
